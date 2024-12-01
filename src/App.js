@@ -1,5 +1,10 @@
 import React from 'react';
 import "./App.css";
+import { initWeb3 } from './utils/web3Setup';
+import { executeTransaction } from './services/contractService';
+import { checkNetwork } from './utils/networkUtils';
+import ErrorBoundary from './components/ErrorBoundary';
+
 
 import AdministratorDashboardRequests from './components/javascripts/administrator-dashboard-requests';
 import AdministratorDashboardUserRegistration from './components/javascripts/user-registration';
